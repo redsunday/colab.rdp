@@ -1,10 +1,7 @@
 https://colab.research.google.com
 
-!wget https://raw.githubusercontent.com/redsunday/colab.rdp/main/rdp.sh &>
-/dev/null
-
+!wget https://raw.githubusercontent.com/redsunday/colab.rdp/main/rdp.sh &> /dev/null
 !chmod +x rdp.sh
-
 !./rdp.sh
 
 Wait.....
