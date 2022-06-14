@@ -24,9 +24,9 @@ sudo adduser Users chrome-remote-desktop
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-#read -p "Paste Here: " CRP
-#su - Users -c """$CRP"""
-su - Users -c """DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AY0e-g7iKGgYhlxeehRbKmBSQrOE2h8WpBfXmjDRLuEvYD4OIF5T48jdesMCfpZbKKuLxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)"""
+read -p "Paste Here: " CRP
+su - Users -c """$CRP"""
+#su - Users -c """DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AY0e-g7iKGgYhlxeehRbKmBSQrOE2h8WpBfXmjDRLuEvYD4OIF5T48jdesMCfpZbKKuLxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
